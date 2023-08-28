@@ -2,9 +2,10 @@ https://who.is/  --> ( whois)
 ---------------------------------------------------
 https://registro.br/tecnologia/ferramentas/whois/
 ---------------------------------------------------
-ping (host) # tentar contato com outros hosts{ problemas com tentativa de ping? sudonano/etc/resolv.conf e altere o nameserver para 8.8.8.8 e salve o arquivo e reinicie o serviço DNS:
+ping (host) # tentar contato com outros hosts. 
+/////Problemas com tentativa de ping? sudonano/etc/resolv.conf e altere o nameserver para 8.8.8.8 e salve o arquivo e reinicie o serviço DNS:
 
-sudo systemctl reiniciar systemd-resolved.service
+sudo systemctl reiniciar systemd-resolved.service/////////
 
 
 host (host) # retorna dados de ip sobre um destino
