@@ -9,9 +9,13 @@ sudo systemctl reiniciar systemd-resolved.service/////////
 
 
 host (host) # retorna dados de ip sobre um destino
-dnsenum (host) # enumeração de dns
+dnsenum (host) # enumeração de dns; coletar informações sobre um domínio específico a partir de consultas DNS
 dnsrecon -d (host)
 crt.sh (finder of domins)
+
+
+ Enum: A enumeração é um processo mais específico e direcionado que envolve a identificação e listagem de ativos específicos em um sistema ou rede. 
+Isso inclui a identificação de nomes de usuários, senhas, serviços ativos, recursos compartilhados.
 ----------------------------------------------------
 wafw00f (host) localizador de firewall. Quando damos um host, no primeiro endereço ele nos oferece o host do firewall:
 
