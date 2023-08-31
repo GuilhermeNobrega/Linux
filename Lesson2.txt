@@ -1,0 +1,30 @@
+O comando netcat, frequentemente abreviado como nc, é uma ferramenta de linha de comando que possui várias funcionalidades relacionadas à comunicação de rede, desde testes de conectividade até transferências de arquivos e criação de servidores simples.
+
+Transferência de Dados: O netcat pode ser usado para transferir dados entre máquinas. Ele pode funcionar como um cliente ou servidor, permitindo que você envie ou receba dados por meio de fluxos TCP ou UDP.
+
+Varredura de Portas: Você pode usar o netcat para verificar a abertura de portas em um servidor remoto. Isso pode ser útil para verificar a disponibilidade de serviços em uma máquina.
+
+Criação de Túneis: O netcat pode ser usado para criar túneis de rede, permitindo a passagem de tráfego entre duas máquinas, possivelmente por meio de um terceiro servidor intermediário.
+
+Execução de Comandos Remotos: Combinado com outros comandos, como echo ou bash, o netcat pode ser usado para executar comandos remotamente em uma máquina.
+
+Transferência de Arquivos: Embora não seja a forma mais eficiente, o netcat pode ser usado para transferir arquivos entre máquinas por meio da rede.
+
+Criação de Servidores Simples: O netcat pode ser usado para criar servidores TCP ou UDP simples para testes de conectividade ou transferências de dados.
+
+nc ip - p
+nc bancocn.com 80
+
+
+└─$ nmap bancocn.com 
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-08-30 12:28 -03
+Nmap scan report for bancocn.com (104.21.52.8)
+Host is up (0.021s latency).
+Other addresses for bancocn.com (not scanned): 172.67.192.199 2606:4700:3034::ac43:c0c7 2606:4700:3033::6815:3408
+Not shown: 997 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http  ## portas abertas do firewall
+443/tcp  open  https
+8080/tcp open  http-proxy
+
+Nmap done: 1 IP address (1 host up) scanned in 16.83 seconds
