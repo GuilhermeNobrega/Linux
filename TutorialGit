@@ -13,6 +13,7 @@ git fetch origin
 Atualize Seu Branch Local: Após o comando git fetch, você pode atualizar seu branch local com as alterações mais recentes do branch remoto. Use o comando git pull para fazer isso, substituindo SEU-BRANCH pelo nome do branch que você deseja atualizar:
 git pull origin SEU-BRANCH
 ---------------------------------------------------------------------------------------------------
+**USE git add . para adicionar as alterações (todas)**
 Faça Commit e Envie as Alterações: Após resolver quaisquer conflitos e realizar as alterações necessárias, faça commit das alterações usando o comando git commit e
 em seguida, envie as alterações para o repositório remoto com o comando git push, substituindo SEU-BRANCH pelo nome do branch:
 git commit -m "Sua mensagem de commit"
