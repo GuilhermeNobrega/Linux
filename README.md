@@ -1,4 +1,4 @@
-# Linux Linux Linux Git
+# Linux and Linux and Linux!
 
 ⚠️ **Warning! This game contains:**
 - Loud noises
