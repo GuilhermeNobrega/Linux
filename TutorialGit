@@ -31,3 +31,11 @@ Por exemplo, a saída do comando git remote -v pode se parecer com algo assim:
 origin  https://github.com/seu-usuario/seu-repositorio.git (fetch)
 origin  https://github.com/seu-usuario/seu-repositorio.git (push)
 Neste exemplo, "origin" é o nome do repositório remoto e as URLs fornecem a localização do repositório remoto, tanto para buscar ((fetch)) quanto para enviar ((push)).
+
+-----------------------------------------------------------------------------------------------------
+Para mudar para a branch principal (normalmente chamada de "main" ou "master"):
+
+git checkout main  # ou git checkout master ou branch desejada
+-----------------------------------------------------------------------------------------------------
+Para listar todas as branches:
+git branch
