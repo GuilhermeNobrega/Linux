@@ -1,0 +1,85 @@
+Estrutura de Diretórios no Linux
+No Linux, há um diretório fundamental que abrange todos os outros, conhecido como diretório raiz e representado por uma barra (/).
+Essa estrutura é semelhante ao conceito de C: no Windows, que é chamado de raiz. Isso significa que, no Windows, tudo o que for instalado estará abaixo de C:, assim como no Linux, onde tudo fica abaixo do diretório raiz representado por /.
+
+Diretório Raiz
+O diretório raiz no Linux é representado por /.
+Ele é o ponto de partida para toda a estrutura de diretórios no sistema.
+Diretório /bin
+O diretório /bin desempenha um papel crucial no Linux.
+Armazena comandos essenciais para o funcionamento do sistema.
+Este é um diretório público, permitindo que os comandos contidos nele sejam utilizados por qualquer usuário do sistema.
+Exemplos de Comandos no /bin
+bash: Shell padrão do sistema.
+ls: Comando para listar conteúdo de diretórios.
+echo: Utilizado para imprimir textos no terminal.
+cp: Comando para copiar arquivos ou diretórios, entre outros.
+Essa organização facilita o entendimento da estrutura do sistema de arquivos no Linux, proporcionando uma base sólida para o funcionamento e interação com o sistema operacional.
+
+Diretório /boot
+No diretório /boot, estão localizados os arquivos estáticos necessários à inicialização do sistema.
+Também abriga os arquivos do gerenciador de boot, responsável por carregar um sistema operacional ou permitir a escolha do sistema a ser iniciado.
+Geralmente, o gerenciador de boot é gravado no Setor de Boot da partição ativa ou no Master Boot Record (MBR) do disco rígido.
+Diretório /etc
+O diretório /etc contém os arquivos de configuração do sistema da máquina local.
+Inclui diversos dados de configuração, como scripts de inicialização do sistema (armazenados em /etc/rc*), tabela do filesystem (arquivo /etc/fstab), configuração da inicialização do sistema (arquivo /etc/inittab), configuração default dos logins (arquivo /etc/profile), 
+configuração de rede e outros aspectos do sistema, incluindo a parte gráfica.
+Essa estrutura organizada nos diretórios /boot e /etc facilita a gestão e personalização do sistema operacional Linux, proporcionando aos usuários controle sobre a inicialização e a configuração da máquina local.
+
+Diretório /dev
+O diretório /dev é destinado a armazenar todos os arquivos-dispositivos no Linux.
+No Linux, a comunicação com periféricos ocorre através de links simbólicos, funcionando de maneira semelhante a atalhos. Esses links são armazenados neste diretório, facilitando o acesso aos dispositivos.
+Diretório /lib
+O diretório /lib abriga as bibliotecas compartilhadas e módulos do kernel no Linux.
+As bibliotecas, conhecidas como libs, são equivalentes às DLLs no Windows.
+Quando um programa é instalado no Linux, todas as bibliotecas necessárias para seu funcionamento são armazenadas neste diretório.
+A organização nos diretórios /dev e /lib desempenha um papel crucial na interação do sistema operacional Linux com dispositivos e na disponibilidade de bibliotecas essenciais para o funcionamento adequado dos programas instalados.
+
+Diretório /media
+O diretório /media serve como ponto de montagem para mídias removíveis, como CD, DVD, floppy disk, pendrive, câmera digital, HD externo, entre outros.
+Equivale, de certa forma, às letras de unidade no Windows (por exemplo, A: e D:), mas, no Linux, em vez de letras, utiliza-se o nome do dispositivo para montagem.
+Diretório /mnt
+O diretório /mnt é utilizado como ponto de montagem para sistemas de arquivos.
+Por exemplo, se houver um servidor de arquivos na rede que precise ser acessado por um usuário, o administrador pode disponibilizar esse diretório na máquina do usuário dentro de /mnt.
+Uma característica interessante é que isso ocorre de forma transparente para o usuário; o Linux enxerga o diretório remoto como se fosse um diretório da máquina local.
+A organização nos diretórios /media e /mnt é essencial para facilitar o acesso a dispositivos de armazenamento removíveis e compartilhar sistemas de arquivos em rede de maneira transparente no ambiente Linux.
+
+Diretório /opt
+O diretório /opt é normalmente utilizado por programas que são instalados após o sistema já estar em funcionamento.
+Esses programas geralmente requerem mais espaço para instalação, como é o caso do OpenOffice e do KDE.
+
+Diretório /srv
+O diretório /srv é utilizado para dados de serviços fornecidos pelo sistema, com aplicação de alcance geral, ou seja, os dados não são específicos de um usuário.
+Exemplos incluem /srv/www (servidor web) e /srv/ftp (servidor FTP).
+
+Diretório /var
+O diretório /var contém arquivos de dados variáveis.
+Inclui arquivos de log, arquivos aguardando liberação em /var/spool, mensagens de e-mail e arquivos a serem impressos.
+
+Diretório /sbin
+O diretório /sbin armazena comandos utilizados para inicializar, reparar, restaurar e/ou recuperar o sistema.
+Esses comandos essenciais são geralmente utilizados apenas pelo usuário root.
+
+Diretório /tmp
+O diretório /tmp é utilizado para armazenar arquivos temporários.
+É comum para guardar informações temporárias até que uma operação seja concluída, como no caso de downloads.
+Observação: No Debian, este diretório é limpo a cada boot, então não é aconselhável armazenar arquivos importantes nele.
+
+Diretório /home
+O diretório /home é o diretório dos usuários.
+Sempre que um novo usuário é criado, um diretório com o mesmo nome é criado em /home.
+
+Diretório /usr
+O diretório /usr armazena dados compartilhados e é montado como somente leitura.
+É considerado um dos mais importantes do sistema, contendo programas instalados após a instalação inicial do Linux.
+Subdiretórios importantes incluem /usr/include (arquivos de cabeçalho), /usr/lib (bibliotecas), /usr/local (instalações locais) e outros.
+
+Diretório /root
+O diretório /root é o diretório pessoal do administrador do sistema (root) e possui poderes administrativos.
+
+Diretório /sys
+O diretório /sys contém módulos para equipamentos USB e é montado automaticamente no sistema.
+
+Diretório /proc
+O diretório /proc é um diretório virtual mantido pelo kernel para a configuração atual do sistema.
+Contém informações como o modelo da CPU, quantidade de memória, dispositivos montados, interrupções, PID de processos, entre outros.
