@@ -1,0 +1,38 @@
+Tutorial sobre o Uso do Screen no Linux:
+
+1: Instalação do Screen
+- sudo apt install screen
+2: Iniciar uma Nova Sessão no Screen
+- Após instalação, digite o comando screen em seu terminal. Quando feito, irá ser aberta uma novo terminal.
+
+Após a instalação, digite o comando screen no terminal. Isso abrirá uma nova sessão.
+
+3.1: Listar Terminais:
+
+Caso tenha mais de um terminal aberto, digite screen -ls. Isso mostrará todos os terminais iniciados.
+Para acessar um terminal específico, digite screen -r valor_terminal. Por exemplo, screen -r 8094.
+3.2: Sair de um Terminal:
+
+Para encerrar um terminal e salvar suas operações, pressione Ctrl-a seguido por d. Isso desconectará, mas manterá a sessão ativa.
+Se você deseja encerrar completamente a sessão e todos os seus terminais, feche a janela do terminal onde o screen está em execução..
+3.3: Encerrar Terminal:
+
+Com o terminal selecionado, pressione Ctrl-a seguido por k.
+Isso enviará um sinal de encerramento (SIGKILL) para o terminal selecionado, encerrando-o.
+Passo 4: Encerrar uma Sessão do Screen
+
+Dicas essenciais :
+Você pode dar nomes para os terminais com o comando: screen -S nome_terminal. Isso ajuda a diferenciar os terminais abertos
+Para reconectar a uma sessão anterior do screen, utilize o comando screen -r.
+Certifique-se de salvar qualquer trabalho importante antes de encerrar um terminal. Sempre use o Ctrl-a (comando de controle). Após pressionar Ctrl-a, o screen aguarda um segundo comando para determinar a ação desejada.
+Sempre fique atento em salvar seus dados nos terminais, pois o encerramento pode resultar na perda de dados.
+
+Estados do screen: 
+Detached (Desconectado): Uma sessão desconectada significa que ela está em execução em segundo plano sem estar associada a um terminal específico.
+Isso ocorre quando você utiliza o comando Ctrl-a d ou screen -d. A sessão continua a existir, mas você não está interagindo diretamente com ela. Você pode reconectar-se a uma sessão desconectada posteriormente.
+
+Attached (Conectado): Uma sessão conectada significa que ela está associada a um terminal específico e você está interagindo diretamente com ela.
+Quando você inicia uma nova sessão do screen sem a opção -d, ela estará automaticamente associada ao terminal atual, o que significa que você está conectado à sessão.
+Se uma sessao caiu no meio e ficou como attached faca assim (esse comando vai retirar o attach e reatachar) : screen -d -r <sessao que ta attached>
+Em resumo, você "desconecta" uma sessão para deixá-la em execução em segundo plano, e você "conecta" para interagir diretamente com ela. 
+O estado desconectado é útil quando você precisa sair de um terminal, mas deseja manter os processos em execução no screen. O estado conectado é quando você está interagindo ativamente com o screen no terminal atual.
