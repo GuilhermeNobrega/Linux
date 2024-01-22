@@ -14,7 +14,6 @@ Para acessar um terminal específico, digite screen -r valor_terminal. Por exemp
 3.2: Sair de um Terminal:
 
 Para encerrar um terminal e salvar suas operações, pressione Ctrl-a seguido por d. Isso desconectará, mas manterá a sessão ativa.
-Se você deseja encerrar completamente a sessão e todos os seus terminais, feche a janela do terminal onde o screen está em execução..
 3.3: Encerrar Terminal:
 
 Com o terminal selecionado, pressione Ctrl-a seguido por k.
