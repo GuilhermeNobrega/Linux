@@ -1,4 +1,6 @@
-Atualizando um Diretório em que Você é um Colaborador:
+
+git config --global user.name "seu_nome_de_usuário"
+git config --global user.email "seu_email@dominio.com"
 
 Clone o Repositório: Se você ainda não tiver uma cópia do repositório em seu computador, clone-o utilizando o comando git clone seguido da URL do repositório:
 
