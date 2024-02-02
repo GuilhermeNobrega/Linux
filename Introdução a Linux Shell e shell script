@@ -1,0 +1,17 @@
+O que é kernel?
+O kernel é um programa de computador que é o núcleo do sistema operacional de um computador, com controle total sobre tudo no sistema. Ele gerencia os seguintes recursos do sistema Linux –
+
+Gerenciamento de arquivos
+Gerenciamento de processos
+Gerenciamento de E/S
+Gerenciamento de memória
+Gerenciamento de dispositivos etc.
+
+Muitas vezes se engana que Linus Torvalds desenvolveu o sistema operacional Linux, mas na verdade, ele é apenas responsável pelo desenvolvimento do kernel Linux.
+Sistema Linux completo = Kernel + utilitários e bibliotecas do sistema GNU + outros scripts de gerenciamento + scripts de instalação.
+
+O que é Shell?
+Um shell é um programa de usuário especial que fornece uma interface para o usuário usar os serviços do sistema operacional. 
+O Shell aceita comandos legíveis dos usuários e os converte em algo que o kernel possa entender. 
+É um interpretador de linguagem de comando que executa comandos lidos em dispositivos de entrada, como teclados ou arquivos. 
+O shell é iniciado quando o usuário efetua login ou inicia o terminal.
