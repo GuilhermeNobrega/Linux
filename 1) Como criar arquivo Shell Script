@@ -1,0 +1,8 @@
+Para você criar seu primeiro arquivo shell, digite em seu terminal: touch nome_arquivo.sh (.sh significa a extensão do arquivo shell)
+
+Após criado, use ls-ltr e verá isso na tela:
+
+-rw-r--r--    1 xxxxxx UsersGrp         0 Feb  2 07:53 oi.sh
+Para nós tem permissão apenas de read and write, precisa de execução também. Digite o comando no seu terminal para concender essa permissão
+
+chmod +x nome_arquivo.sh (permissão de execução para arquivo
