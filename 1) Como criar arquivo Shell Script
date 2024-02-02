@@ -6,3 +6,16 @@ Após criado, use ls-ltr e verá isso na tela:
 Para nós tem permissão apenas de read and write, precisa de execução também. Digite o comando no seu terminal para concender essa permissão
 
 chmod +x nome_arquivo.sh (permissão de execução para arquivo
+
+Para você abrir ele, use seu editor de texto preferido (vim, nano, até o vs code se encaixa neste meio)
+
+vim oi.sh
+
+Agora coloque os scripts dentro do seu arquivo.sh:
+
+echo "This is my first shell script"
+touch testfile
+ls
+echo "End of my shell script"
+
+Para executar é simples: bash nome_arquivo.sh OU ./nome_arquivo
