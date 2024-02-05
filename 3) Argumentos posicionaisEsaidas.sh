@@ -48,3 +48,13 @@ fi
 #Você pode definir manualmente um código de saída para seu script de shell. Isto pode ser usado com declarações condicionais para transmitir se o propósito do script foi alcançado ou não. 
 
 echo 0(sucesso) or echo 1(falhas) 
+
+#!/bin/bash
+bash teste.sh 2> erros.txt
+
+if [ $? -ne 0 ]; then
+  echo "Erro ao executar teste.sh. Verifique o arquivo erros.txt para detalhes."
+else
+  echo "Bem sucedido"
+fi
+   
