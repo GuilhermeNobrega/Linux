@@ -25,3 +25,26 @@ ecoar $b
 ecoar $c
 d=$(ls /bin | grep bash)
 ecoar $d
+
+Exit Codes of shell commands:
+Saída 0 significa que o programa rodou sem erros. Outras saídas indicam erros ( vão de 0 até 255)
+Para ver o código, você pode usar $? ou definindo uma variável:
+
+#!/bin/sh
+b=$(pwd)
+c=`pwd`
+echo $b
+echo $c
+d=$(ls /bin | grep bash)
+echo $d
+saida=$?
+if [ $saida -eq 0 ];then
+# ou também.. if [ $? -eq 0 ];then
+
+  echo "Saida bem sucedida do comando"
+  echo $saida
+fi
+
+#Você pode definir manualmente um código de saída para seu script de shell. Isto pode ser usado com declarações condicionais para transmitir se o propósito do script foi alcançado ou não. 
+
+echo 0(sucesso) or echo 1(falhas) 
