@@ -8,7 +8,7 @@
 
 </div>
 
-Aprender sobre Linux é uma jornada fascinante, e também estou explorando o mundo incrível do Shell Scripting. O Shell Scripting é uma habilidade valiosa que permite automatizar tarefas, criar scripts poderosos e interagir com o sistema operacional de uma maneira mais eficiente.
+Aprender sobre Linux é uma jornada fascinante, e também o mundo incrível do Shell Scripting. O Shell Scripting é uma habilidade valiosa que permite automatizar tarefas, criar scripts poderosos e interagir com o sistema operacional de uma maneira mais eficiente.
 
 Se você deseja se aprofundar no universo do Shell Script, considere explorar os seguintes tópicos:
 
