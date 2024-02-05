@@ -34,3 +34,16 @@ Input:
   read width
   area=$((length * width))
   echo "The are of the rectangle is: $area"
+=========================================
+Atribuições, diversas formas:
+var1="name" (SEM ESPAÇOS PARA ATRIBUIR)
+echo {$var1}
+OU
+var1='name'
+echo $var1
+ou
+var1=name
+echo "$var1"
+Para printar o tamanho, faça:
+variableName=value
+echo ${#variablena}
