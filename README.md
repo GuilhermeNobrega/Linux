@@ -19,6 +19,7 @@ Se você deseja se aprofundar no universo do Shell Script, considere explorar os
 - **Comandos do Sistema:** Explore como executar comandos do sistema a partir do seu script, interagindo diretamente com o terminal.
 - **Debugging:** Familiarize-se com técnicas de debugging para identificar e corrigir erros em seus scripts.
 
+
 A medida que você mergulha no mundo do Linux e Shell Script, lembre-se de praticar e aplicar esses conceitos em projetos práticos. A experiência prática é uma das melhores maneiras de consolidar o conhecimento.
 
 Happy scripting! 🚀
