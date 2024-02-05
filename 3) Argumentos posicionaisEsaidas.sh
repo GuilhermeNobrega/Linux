@@ -57,4 +57,7 @@ if [ $? -ne 0 ]; then
 else
   echo "Bem sucedido"
 fi
-   
+
+O /dev/null é um arquivo especial. Você pode redirecionar saídas pra este dispositivo e o conteúdo será intencionalmente descartado. O redirecionamento para o /dev/null sempre reporta sucesso na escrita.
+Ex: bash teste.sh 2>/dev/null
+https://www.certificacaolinux.com.br/comando-linux-condutores/
