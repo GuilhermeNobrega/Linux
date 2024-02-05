@@ -12,10 +12,19 @@ Para você abrir ele, use seu editor de texto preferido (vim, nano, até o vs co
 vim oi.sh
 
 Agora coloque os scripts dentro do seu arquivo.sh:
-
+#!/bin/bash (Definição do interpretador (shell que irá utilizar, passando seu caminho para ele))
 echo "This is my first shell script"
 touch testfile
 ls
 echo "End of my shell script"
 
 Para executar é simples: bash nome_arquivo.sh OU ./nome_arquivo
+----------------------------------------------------------------
+Comentários são: # comentário
+
+# Acessando uma variável de ambiente
+echo $USER
+
+# Criando e acessando variável definida pelo usuário
+nome_variável="Aiden"
+echo $nome_variável
