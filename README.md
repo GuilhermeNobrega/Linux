@@ -19,7 +19,75 @@ Se você deseja se aprofundar no universo do Shell Script, considere explorar os
 - **Comandos do Sistema:** Explore como executar comandos do sistema a partir do seu script, interagindo diretamente com o terminal.
 - **Debugging:** Familiarize-se com técnicas de debugging para identificar e corrigir erros em seus scripts.
 
+## Comandos de Navegação e Manipulação de Arquivos 📂
 
+- `ssh`: Utilizado para acessar e interagir com servidores remotos de forma segura.
+
+- `ls`: Lista os arquivos e diretórios no diretório atual.
+  - `-l`: Exibe detalhes, incluindo permissões e propriedades.
+  - `-a`: Mostra todos os arquivos, incluindo os ocultos.
+
+- `cd`: Navega para um diretório específico.
+  - `..`: Volta um diretório.
+  - `-`: Retorna para o diretório anterior.
+
+- `cat`: Exibe o conteúdo de um arquivo.
+  - `-n`: Numerar as linhas.
+
+- `file`: Determina o tipo de um arquivo.
+
+- `du`: Mostra o uso do disco por arquivos e diretórios.
+  - `-h`: Exibe tamanhos legíveis por humanos.
+
+- `find`: Busca arquivos e diretórios.
+  - `-name`: Especifica o nome do arquivo a ser procurado.
+
+- `grep`: Procura por padrões em arquivos.
+  - `-r`: Procura recursivamente em subdiretórios.
+  - `-i`: Ignora maiúsculas e minúsculas.
+
+## Comandos de Manipulação de Texto e Arquivos 📝
+
+- `man`: Exibe o manual de um comando.
+
+- `grep`: Procura por padrões em arquivos.
+  - `-n`: Exibe números de linha.
+  - `-c`: Conta o número de linhas correspondentes.
+
+- `sort`: Ordena linhas de texto.
+  - `-r`: Inverte a ordem.
+
+- `uniq`: Remove linhas duplicadas em um arquivo ordenado.
+  - `-c`: Exibe contagem de ocorrências.
+
+- `strings`: Exibe sequências de caracteres imprimíveis em arquivos binários.
+
+- `base64`: Codifica ou decodifica arquivos em base64.
+
+- `tr`: Traduz ou deleta caracteres.
+
+- `tar`: Cria ou extrai arquivos compactados no formato tar.
+  - `-cvf`: Cria um novo arquivo tar.
+  - `-xvf`: Extrai arquivos de um arquivo tar.
+
+- `gzip`: Comprime ou descomprime arquivos no formato gzip.
+  - `-d`: Descomprime.
+
+- `bzip2`: Comprime ou descomprime arquivos no formato bzip2.
+  - `-d`: Descomprime.
+
+- `xxd`: Converte um arquivo binário em formato hexadecimal.
+
+- `wc`: Conta o número de linhas, palavras e caracteres em um arquivo.
+- `tr`: Substituir um conjunto de caracteres por outro.
+
+### Exibindo o conteúdo do arquivo no terminal:
+
+- **`more`**: Este comando é usado para percorrer o conteúdo do arquivo, uma tela por vez.
+
+  ```bash
+  # Exemplo:
+  more nome_do_arquivo
 
 
 Boa sorte! 🚀
