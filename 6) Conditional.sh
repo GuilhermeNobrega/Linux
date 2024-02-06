@@ -56,3 +56,28 @@ case $numero in
     echo "Opção inválida."
     ;;
 esac
+
+#!/bin/bash
+echo "Digit one value"
+read X
+echo "Digit other value"
+read Y
+
+function ola(){
+  if [ $1 -eq $2 ]; then
+    echo "Same values"
+  elif [ $1 -lt $2 ]; then
+    echo "This value ${1} is less than ${2}"
+  elif [ $1 -gt $2 ]; then
+    echo "The value ${2} is less than ${1}"
+  fi
+}
+
+ola $X $Y
+
+if [ $? -eq 0 ]; then
+    echo "Operação bem sucedida"
+else
+    echo "erro" 2>erros.txt
+fi
+
