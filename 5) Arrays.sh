@@ -24,6 +24,7 @@ echo "Search is : ${search}"
 echo "Replace value: $replace"
 echo "Todos os valores: ${arry[*]}"
 unset arry[2]
+arry[0]=199
 echo "Todos os valores: ${arry[@]}"
 
 =====================================
