@@ -12,11 +12,15 @@ echo "Digit other value"
 read Y
 
 if [ $X -eq $Y ];then
-  echo "uh, same values, hm? nice"
+  echo "Same values"
+fi
 
 elif [ $X -gt $Y ];then
   echo "This value ${X} is greater than ${Y}"
 
 elif [ $X -lt $Y ];then
-  echo "The value ${Y} is greater than ${X}"
+  echo "The value ${Y} is less than ${X}"
+
+if [ $? -eq 0 ];then
+    echo "Operação bem sucedida"
 fi
