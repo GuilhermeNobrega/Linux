@@ -1,0 +1,18 @@
+Proprietário (Owner): 1º dígito.
+Grupo (Group): 2º dígito.
+Outros (Others): 3º dígito.
+Cada dígito é uma soma de permissões, onde:
+
+4: Permissão de leitura (r).
+2: Permissão de escrita (w).
+1: Permissão de execução (x).
+Assim, os valores numéricos possíveis são:
+
+0: Nenhuma permissão.
+1: Execução.
+2: Escrita.
+3: Escrita e execução.
+4: Leitura.
+5: Leitura e execução.
+6: Leitura e escrita.
+7: Leitura, escrita e execução.
