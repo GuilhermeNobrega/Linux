@@ -1,0 +1,19 @@
+===========================================
+Formato while loop:
+
+#!/bin/bash
+
+echo "type one value"
+read X
+echo "type the limit value"
+read Y
+while [ $X -lt $Y ]; do
+  sum=$((X+1))
+  echo "$sum"
+  X=$((X+1))
+  
+done
+===========================================
+
+Formato for loop:
+
