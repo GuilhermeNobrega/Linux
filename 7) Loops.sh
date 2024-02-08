@@ -88,3 +88,26 @@ do
   echo "Contador: $contador"
   contador=$((contador + 1))
 done
+
+======================================================================================
+EXEMPLOS:
+
+#!/bin/bash
+
+verification='y'
+
+while true
+do
+    # Solicita ao usuário que insira o nome
+    read -p "Enter your name: " NAME
+
+    # Pergunta ao usuário se o nome fornecido está correto
+    read -p "Is ${NAME} correct? (y/n) " verification
+
+    # Verifica se a resposta é 'n' e exibe uma mensagem
+    if [ "$verification" == 'n' ]; then
+        echo "Try again."
+    else
+      break
+    fi
+done
