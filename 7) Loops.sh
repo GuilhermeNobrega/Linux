@@ -13,6 +13,15 @@ while [ $X -lt $Y ]; do
   X=$((X+1))
   
 done
+
+#!/bin/bash
+
+while true
+do
+  echo "oia"
+  sleep 1
+done
+
 ===========================================
 Formato for loop:
 ((inicio; condição; passo))
