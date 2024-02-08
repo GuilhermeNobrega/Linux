@@ -90,7 +90,7 @@ do
 done
 
 ======================================================================================
-EXEMPLOS:
+EXEMPLOS E FINALIZAÇÃO:
 
 #!/bin/bash
 
@@ -111,3 +111,23 @@ do
       break
     fi
 done
+
+
++----+-----------------------------------------------------+----------------------------------------------------+
+|    |                        break                        |                      continue                       |
++----+-----------------------------------------------------+----------------------------------------------------+
+| 1  | ==== It terminates the execution of the loop for    | ==== It skips the execution of the loop for only   |
+|    |    all the remaining iterations.                    |    the current iteration.                           |
++----+-----------------------------------------------------+----------------------------------------------------+
+| 2  | ==== It allows early termination of the loop.       | ==== It allows early execution of the next         |
+|    |                                                     |    iteration.                                       |
++----+-----------------------------------------------------+----------------------------------------------------+
+| 3  | ==== It stops the execution of loops.               | ==== It stops the execution of the loop only for    |
+|    |                                                     |    the current iteration.                           |
++----+-----------------------------------------------------+----------------------------------------------------+
+| 4  | ==== The code after the loop which was terminated   | ==== The code in the loop continues its execution   |
+|    |    is continued.                                    |    skipping the current iteration.                  |
++----+-----------------------------------------------------+----------------------------------------------------+
+
+======================================================================================
+
