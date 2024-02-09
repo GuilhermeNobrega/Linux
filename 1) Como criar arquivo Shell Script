@@ -28,3 +28,27 @@ echo $USER
 # Criando e acessando variável definida pelo usuário
 nome_variável="Aiden"
 echo $nome_variável
+
+
+As variáveis de ambiente no contexto do Bash (Bourne Again SHell) são variáveis especiais que contêm informações sobre o ambiente de execução do shell e do sistema. 
+Essas variáveis são usadas para configurar o comportamento do shell e fornecer informações úteis para os programas em execução no shell. Algumas das variáveis de ambiente mais comuns em Bash incluem:
+
+$HOME: O caminho para o diretório pessoal do usuário.
+
+$PATH: Uma lista de diretórios separados por dois-pontos : que o shell usa para procurar por comandos executáveis.
+
+$USER ou $LOGNAME: O nome do usuário que está atualmente logado.
+
+$PS1: A string de prompt do shell (o que é exibido antes de cada comando).
+
+$PWD: O diretório de trabalho atual.
+
+$SHELL: O caminho para o shell padrão do usuário.
+
+$TERM: O tipo de terminal que está sendo usado.
+
+$LANG e $LC_*: Variáveis que controlam a configuração regional e de idioma do sistema.
+
+$OSTYPE: O tipo de sistema operacional.
+
+$BASH_VERSION: A versão do Bash que está sendo usada.
