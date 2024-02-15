@@ -39,11 +39,27 @@ receber $1 $2
 # -z checa para ver se tem variváveis nulas ou não inicializadas (iniciada mas sem valor). Retorna true
 # -n checa se parametros foram passados. Retorna true
 
-if [[ -z $1 ]];
+echo "One value"
+read x
+if [[ -z $x ]];
 then 
     echo "No parameter passed."
 else
+    echo "Parameter passed = $x"
     echo "Parameter passed = $1"
 fi
 
 bash teste.sh 1
+#======================================================================
+Vários parametros passados
+
+#!/bin/bash
+  if [[ $# -eq 0 ]]; then
+        echo "Não foram passados nenhum valor na execução do script para leitura"
+        exit
+    fi
+for values in $@
+do
+    echo "Valores passados na linha de comando: $values"
+done
+echo "Its over..?"
