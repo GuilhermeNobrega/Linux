@@ -36,6 +36,8 @@ receber(){
 receber $1 $2
 
 #!/bin/bash
+# -z checa para ver se tem variváveis nulas ou não inicializadas (iniciada mas sem valor). Retorna true
+# -n checa se parametros foram passados. Retorna true
 
 if [[ -z $1 ]];
 then 
