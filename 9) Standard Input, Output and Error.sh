@@ -23,6 +23,9 @@ ls arquivo_inexistente 2> erro.txt
 # Combinando stdout e stderr no mesmo arquivo; Envia erros e resultado padrão para esse local
 ls arquivo_inexistente > output.txt 2>&1
 
+# Neste mandamos o stdout e stderr em um só comando
+command >& log.txt
+
 # Utilizando um pipe para passar a saída de um comando como entrada para outro
 ls | grep ".txt"
 
@@ -35,3 +38,14 @@ ls | 2>dev/null
 #!/bin/bash
 read -p "Type your name plse: " name
 echo "Is $name"
+
+#Exemplo:
+
+#!/bin/bash
+read -p "Enter file name : " filename
+while read line
+do 
+echo $line
+done < $filename #>
+# Essa última linha significa: o arquivo de entrada, que será o arquivo lido, vai ser esse < $variavel
+
