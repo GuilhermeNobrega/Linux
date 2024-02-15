@@ -44,3 +44,4 @@ else
     echo "Parameter passed = $1"
 fi
 
+bash teste.sh 1
