@@ -22,3 +22,11 @@ ls arquivo_inexistente 2> erro.txt
 
 # Combinando stdout e stderr no mesmo arquivo; Envia erros e resultado padrão para esse local
 ls arquivo_inexistente > output.txt 2>&1
+
+# Utilizando um pipe para passar a saída de um comando como entrada para outro
+ls | grep ".txt"
+
+# Podemos também jogar (Esconder nosso erro) para o dev/null
+# /dev/null é um arquivo especial. Você pode redirecionar saídas pra este dispositivo e o conteúdo será intencionalmente descartado. O redirecionamento para o /dev/null sempre reporta sucesso na escrita.
+
+ls | 2>dev/null
