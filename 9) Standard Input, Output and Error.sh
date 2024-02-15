@@ -30,3 +30,8 @@ ls | grep ".txt"
 # /dev/null é um arquivo especial. Você pode redirecionar saídas pra este dispositivo e o conteúdo será intencionalmente descartado. O redirecionamento para o /dev/null sempre reporta sucesso na escrita.
 
 ls | 2>dev/null
+
+# outra forma de input..
+#!/bin/bash
+read -p "Type your name plse: " name
+echo "Is $name"
