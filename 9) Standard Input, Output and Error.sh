@@ -22,6 +22,18 @@ echo patern | grep patern
 #===============================================================================================================
 #stder
 
+#!/bin/bash
+
+ls > /tmp/log
+cat /tmp/log
+
+ls /no/path > /tmp/log
+cat /tmp/log
+cat /tmp/log
+
+rm /tmp/log
+# Exemplo de saída com erro, pois esse no path não existe
+
 # Redirecionamento de stdout para um arquivo
 ls > lista_de_arquivos.txt
 
