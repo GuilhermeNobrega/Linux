@@ -45,6 +45,15 @@ cat /tmp/log
 rm /tmp/log /tmp/err_log
 
 # O direcionamento está enviando os erros para o buraco negro do linux (/dev/null)
+#===============================================================================================================
+#Discartando output:
+
+#!/bin/bash
+
+ls . unexisted_file > /dev/null 2>&1
+# O código está enviando o erros para o mesmo local de de output
+# > pode ser a mesma coisa de 1>
+
 # Redirecionamento de stdout para um arquivo
 ls > lista_de_arquivos.txt
 
