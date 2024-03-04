@@ -53,6 +53,14 @@ rm /tmp/log /tmp/err_log
 ls . unexisted_file > /dev/null 2>&1
 # O código está enviando o erros para o mesmo local de de output; o uso de & indica que a saída irá para outro file descriptor, e não para um arquivo. E como visto, o file descriptor 1 representa o stdout.
 # > pode ser a mesma coisa de 1>
+#===============================================================================================================
+Fluxos em pipeline
+
+#!/bin/bash
+touch /tmp/a
+ ls /tmp/* 2> /dev/null | grep -w a
+ #rm /tmp/a
+ # -w para pegar toda a palavra 'a'
 
 # Redirecionamento de stdout para um arquivo
 ls > lista_de_arquivos.txt
