@@ -52,6 +52,15 @@ for frutos in "${frutas[*]}";do
   echo "$frutos"
 done
 
+ou
+
+#!/bin/bash
+
+for c in {0..10}
+do
+  echo "C value is $c"
+done
+
 Uso do continue no for
 #!/bin/bash
 X=1
