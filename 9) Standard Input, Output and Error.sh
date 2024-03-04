@@ -58,10 +58,12 @@ Fluxos em pipeline
 
 #!/bin/bash
 touch /tmp/a
+echo "You find me" /tmp/a
  ls /tmp/* 2> /dev/null | grep -w a
  #rm /tmp/a
- # -w para pegar toda a palavra 'a'
 
+ # -w para pegar toda a palavra 'a'
+#===============================================================================================================
 # Redirecionamento de stdout para um arquivo
 ls > lista_de_arquivos.txt
 
