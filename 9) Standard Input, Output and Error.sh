@@ -51,7 +51,7 @@ rm /tmp/log /tmp/err_log
 #!/bin/bash
 
 ls . unexisted_file > /dev/null 2>&1
-# O código está enviando o erros para o mesmo local de de output
+# O código está enviando o erros para o mesmo local de de output; o uso de & indica que a saída irá para outro file descriptor, e não para um arquivo. E como visto, o file descriptor 1 representa o stdout.
 # > pode ser a mesma coisa de 1>
 
 # Redirecionamento de stdout para um arquivo
