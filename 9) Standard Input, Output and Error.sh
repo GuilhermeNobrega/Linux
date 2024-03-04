@@ -64,6 +64,10 @@ echo "You find me" /tmp/a
 
  # -w para pegar toda a palavra 'a'
 #===============================================================================================================
+# Qual é o propósito de 2>&1 em scripts de shell?
+#A expressão `2>&1` é usada para redirecionar o erro padrão (descritor de arquivo 2) para o mesmo local da saída padrão.
+Ele combina fluxos de erro padrão e saída padrão , permitindo que sejam redirecionados juntos.
+#===============================================================================================================
 # Redirecionamento de stdout para um arquivo
 ls > lista_de_arquivos.txt
 
@@ -84,7 +88,7 @@ ls | grep ".txt"
 
 ls | 2>dev/null
 
-# outra forma de input..
+#Como leio a entrada de um usuário em um script de shell?
 #!/bin/bash
 read -p "Type your name plse: " name
 echo "Is $name"
@@ -92,10 +96,13 @@ echo "Is $name"
 #Exemplo:
 
 #!/bin/bash
-read -p "Enter file name : " filename
+
+read -p "Enter file name: " filename
+
 while read line
 do 
-echo $line
-done < $filename #>
+  echo $line
+done < $filename
+
 # Essa última linha significa: o arquivo de entrada, que será o arquivo lido, vai ser esse < $variavel
 
