@@ -13,14 +13,15 @@
 #O stderr é usado para mensagens de erro ou saídas de diagnóstico.
 #No shell scripting, o stderr também pode ser redirecionado para um arquivo ou para o mesmo local que o stdout.
 #==============================================================================================================
-# Input/output
+# Input/output:
+
 #!/bin/bash
 
 echo patern | grep patern
 echo patern | grep patern
 # Neste exemplo, a saída do echo patern (output) vai se conectar com a entrada do grep patern (input)
 #===============================================================================================================
-#stder
+#stder:
 
 #!/bin/bash
 
@@ -33,7 +34,17 @@ cat /tmp/log
 
 rm /tmp/log
 # Exemplo de saída com erro, pois esse no path não existe
+#===============================================================================================================
+#Redirecionamento de fluxos:
 
+#!/bin/bash
+
+ls /no/path 2>/dev/null
+ls * /no/path > /tmp/log 2> /tmp/err_log
+cat /tmp/log
+rm /tmp/log /tmp/err_log
+
+# O direcionamento está enviando os erros para o buraco negro do linux (/dev/null)
 # Redirecionamento de stdout para um arquivo
 ls > lista_de_arquivos.txt
 
