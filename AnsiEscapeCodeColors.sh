@@ -41,3 +41,16 @@ do
   done
 }
 back
+
+
+#!/bin/bash
+cores=("Preto" "Vermelho" "Verde" "Amarelo" "Azul" "Magenta" "Ciano" "Branco")
+d=0
+for c in {30..37}
+do
+  echo -e "\e[${c}mThis is->${cores[d]}\e[0m"
+
+  ((d++))
+  sleep 1
+done
+
