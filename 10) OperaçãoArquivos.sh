@@ -31,6 +31,7 @@ else
    echo "$file_name is not a directory"
 fi
 # Checa se é um diretório
+# Se usar opção -f verifica se a variável é um arquivo
 
 =========================================================================================
 
