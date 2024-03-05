@@ -20,3 +20,24 @@ do
   done
 }
 back
+
+
+# Com infinito..
+
+
+#!/bin/bash
+arry=(31 32 33 34 35 36)
+c=0
+function back(){
+while true;
+do
+  if [ $c -eq 6 ]; then
+    c=0
+  fi
+
+  echo -e "\e[${arry[c]}mVish...\e[0m"
+  sleep 1
+ ((c++))
+  done
+}
+back
