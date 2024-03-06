@@ -43,3 +43,4 @@ else
   echo "File $filename does not exist"
 fi
 #Checa se o arquivo existe ou não
+#Mais flags: https://www.geeksforgeeks.org/shell-script-to-perform-operations-on-a-file/?ref=lbp
