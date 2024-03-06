@@ -6,11 +6,7 @@
 <img align='center' src="https://chemnitzer.linux-tage.de/2019/static/img/box/tuxel.gif" width="40" height="40">
 <img align='center' src="https://cdn.iconscout.com/icon/free/png-512/shell-script-1-569185.png" width="40" height="40">
 
-- ` ______     ______     __    __        __   __   __     __   __     _____     ______    
-/\  == \   /\  ___\   /\ "-./  \      /\ \ / /  /\ \   /\ "-.\ \   /\  __-.  /\  __ \   
-\ \  __<   \ \  __\   \ \ \-./\ \     \ \ \'/   \ \ \  \ \ \-.  \  \ \ \/\ \ \ \ \/\ \  
- \ \_____\  \ \_____\  \ \_\ \ \_\     \ \__|    \ \_\  \ \_\\"\_\  \ \____-  \ \_____\ 
-  \/_____/   \/_____/   \/_/  \/_/      \/_/      \/_/   \/_/ \/_/   \/____/   \/_____/ `
+
                                                                                         
 </div>
 
