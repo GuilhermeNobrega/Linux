@@ -106,3 +106,30 @@ done < $filename
 
 # Essa última linha significa: o arquivo de entrada, que será o arquivo lido, vai ser esse < $variavel
 
+
+Resumindo..
+
+Basicamente:
+
+O > (vertice a direita)  está redirecioanando a saída de um comando para um arquivo. Ele cria ou sobrescreve o conteúdo do arquivo com a saida do comando:
+
+comando1 > arquivo.txt (Executa o comando1 e salva sua saída ao arquivo; pode sobrescrever o conteúdo, cuidado)
+
+Ex:
+echo "oi" > arquivo.txt 
+echo "opa" >> arquivo.txt (adiciona isso a mais, sem apagar o conteúdo anterior)
+
+O < (vertice a esquerda) está recebendo a entrada de um arquivo para um comando. Ele redireciona o conteúdo de um arquivo como entrada para comando
+
+comando1 < arquivo.txt (Isso executará comando2 e usará o conteúdo de arquivo.txt como entrada para o comando)
+
+Ex:
+loop
+done < $filename
+
+O pipe | Serve para encadear comandos. A saída de um comando é a entrada para o outro comando
+
+comando3 | comando4
+
+ls -l | wc -l
+
