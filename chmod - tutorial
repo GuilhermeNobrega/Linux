@@ -16,3 +16,26 @@ Assim, os valores numéricos possíveis são:
 5: Leitura e execução.
 6: Leitura e escrita.
 7: Leitura, escrita e execução.
+
+u = o dono do arquivo (user);
+g = os usuários que são membros do mesmo grupo do arquivo (group);
+o = os usuários que não membros do grupo do arquivo (others);
+a = todos os usuários do sistema (all).
+Caso não seja especificada a classe dos usuários para os quais se está alterando as permissões, o sistema usa a opção a (todos os usuários).
+
+Deve-se usar, no comando chmod, um operador para especificar o tipo de modificação que se está fazendo nas permissões.
+
+o operador + provoca a adição das permissões informadas às permissões já existentes;
+o operador – provoca a remoção das permissões especificadas;
+o operador = provoca a redefinição das permissões (semelhante a zerar as permissões e defini-las novamente).
+A combinação das letras rwxst no comando chmod especifica as permissões de acesso.
+
+r = leitura.
+w = gravação.
+x = execução (para arquivos) ou autorização de acesso (para diretórios).
+u = as permissões do dono do arquivo.
+g = as permissões do grupo.
+o = as permissões dos outros usuários do sistema.
+s = permissão especial de execução de um arquivo ou de acesso a um diretório.
+
+https://guialinux.uniriotec.br/chmod/
