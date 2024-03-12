@@ -11,8 +11,10 @@
 </div>
 
 Aprender sobre Linux é uma jornada fascinante, e também o mundo incrível do Shell Scripting. O Shell Scripting é uma habilidade valiosa que permite automatizar tarefas, criar scripts poderosos e interagir com o sistema operacional de uma maneira mais eficiente.
-
-Se você deseja se aprofundar no universo do Shell Script, considere explorar os seguintes tópicos:
+<hr>
+<strong> Shell scripts são, de fato, texto ASCII (ou UTF-8, que é uma extensão do ASCII) que é lido e interpretado por um interpretador de shell. A linguagem de script utilizada em shells, como o Bash, é basicamente um conjunto de comandos e estruturas de controle de fluxo que são interpretados e executados pelo shell. Quando você escreve um script shell, está criando um arquivo de texto que contém uma sequência de comandos que você deseja executar. Este arquivo é então passado para o interpretador de shell correspondente (por exemplo, o Bash), que lê o texto linha por linha e executa os comandos descritos no script. </strong>
+<br>
+<br>
 
 - **Variáveis e Operadores:** Entenda como armazenar dados e realizar operações com variáveis.
 - **Estruturas de Controle:** Aprenda sobre estruturas condicionais (if-else) e loops para controlar o fluxo do seu script.
