@@ -102,6 +102,31 @@ Usado para encontrar rapidamente nomes de arquivos em todo o sistema de arquivos
 - **alias:** usado para criar novos comandos a partir de comandos existentes.
 - **crontab:** usado para agendar tarefas no Unix/Linux para serem executadas em horários específicos.
 
+# Background Execution
+
+Quando você executa um comando seguido pelo símbolo `&`, o comando é executado em segundo plano, e o controle retorna imediatamente ao prompt do shell. Isso é conhecido como "background execution".
+
+**Exemplo:**
+```bash
+comando &
+```
+# Redirecionamento de Descritor de Arquivo
+
+Em contextos de redirecionamento, o `&` pode ser usado para redirecionar descritores de arquivo específicos. Por exemplo, `2>&1` redireciona a saída de erro padrão (stderr) para o mesmo local que a saída padrão (stdout).
+
+**Exemplo:**
+```bash
+comando 2>&1
+````
+# Operador de Concatenação de Comandos
+
+O `&&` é um operador utilizado para concatenar comandos no shell, permitindo que o segundo comando seja executado apenas se o primeiro for bem-sucedido.
+
+**Exemplo:**
+```bash
+comando1 && comando2
+```
+
 ## Binaries:
 
 # xxd
