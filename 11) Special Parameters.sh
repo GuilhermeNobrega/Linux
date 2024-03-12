@@ -13,3 +13,9 @@ echo "Diretório de trabalho atual: $PWD"
 echo "Nome do usuário: $USER"
 echo "Último argumento do comando anterior: $_"
 echo "Meu shell é $SHELL" # Apresenta o tipo de shell que você está usando
+
+#Temos diversos caracteres especiais no linux. Para a gente tirar a funcionalidade deles, ponha o \ antes do comando:
+
+#echo \ ***deu***
+#touch meu\arquivo.txt
+#etc
