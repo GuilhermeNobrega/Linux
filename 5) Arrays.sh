@@ -44,3 +44,8 @@ echo "Elemento 5: ${my_array[4]}"
 
 Se deseja mudar algum valor nas posições é, simples:
 my_array[2]=99
+=====================================
+#APPEND VALUES INTO A ARRAY: +=
+fruits=('Apple' 'Banana' 'Cherry')
+fruits+=('Date')
+echo ${fruits[*]
