@@ -1,5 +1,6 @@
+==============================================================
 File Management:
-
+==============================================================
 cat: "concatenate", usado para exibir arquivos ou concatenar arquivos.
 cd: "change directory", usado para mover entre diretórios.
 chmod: "change mode", permite que você altere as permissões de arquivos.
@@ -15,11 +16,19 @@ pwd: "print working directory", mostra o diretório em que você está atualment
 rm: "remove", usado para remover arquivos e diretórios.
 wc: "word count", usado para contar caracteres, palavras e linhas em arquivos de texto e/ou entrada padrão.
 Searching:
-
+diff: Faz comparação entre dois arquivos. Ponha um lado do outro
+< Esta é uma linha no arquivo teste.sh
+---
+> Esta é uma linha no arquivo teste1.sh
+sdiff: Compara dois arquivos lado a lado de forma mais organizada e visual (deixe o terminal em tela cheia).
 find: um comando poderoso usado para encontrar arquivos e diretórios com uma variedade de critérios de pesquisa.
 grep: "general regular expression parser", também conhecido como "search" ou "textsearch".
 locate: usado para encontrar rapidamente nomes de arquivos em todo o sistema de arquivos.
+
+==============================================================
+
 System Status:
+==============================================================
 
 df: "disk free", usado para mostrar informações sobre o espaço livre em sistemas de arquivos.
 du: "disk usage", mais frequentemente usado para determinar o tamanho de diretórios.
@@ -27,7 +36,11 @@ lsof: lista arquivos abertos, geralmente usado por administradores de sistema pa
 ps: "process statistics", usado para exibir os processos em execução no sistema.
 top: uma utilidade para mostrar processos em execução, uso da CPU e uso de memória.
 who: mostra quem está atualmente logado.
+
+==============================================================
+
 Text Processing:
+==============================================================
 
 cut: usado para recortar campos e colunas da saída de texto e arquivos.
 grep: "general regular expression parser", também conhecido como "search" ou "textsearch".
