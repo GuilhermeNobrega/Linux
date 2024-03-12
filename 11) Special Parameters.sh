@@ -12,3 +12,4 @@ echo "Diretório home: $HOME"
 echo "Diretório de trabalho atual: $PWD"
 echo "Nome do usuário: $USER"
 echo "Último argumento do comando anterior: $_"
+echo "Meu shell é $SHELL" # Apresenta o tipo de shell que você está usando
