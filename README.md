@@ -66,6 +66,13 @@ Usado para encontrar rapidamente nomes de arquivos em todo o sistema de arquivos
 - **du:** "disk usage", mais frequentemente usado para determinar o tamanho de diretórios.
 - **lsof:** lista arquivos abertos, geralmente usado por administradores de sistema para solucionar problemas.
 - **ps:** "process statistics", usado para exibir os processos em execução no sistema.
+- ```bash
+   ps -f # Processos do usuário que estão em execução
+   ps -ef # Todos os processos menos os do kernel
+   ps -A # Todos, até do kernel
+   ps -Kf # Todos os processos do kernel
+   ps auxw # Porcentagem de uso da CPU
+   ```
 - **top:** uma utilidade para mostrar processos em execução, uso da CPU e uso de memória.
 - **who:** mostra quem está atualmente logado.
 - **w:** mostra quem está logado.
