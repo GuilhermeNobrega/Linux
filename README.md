@@ -68,6 +68,8 @@ Usado para encontrar rapidamente nomes de arquivos em todo o sistema de arquivos
 - **ps:** "process statistics", usado para exibir os processos em execução no sistema.
 - **top:** uma utilidade para mostrar processos em execução, uso da CPU e uso de memória.
 - **who:** mostra quem está atualmente logado.
+- **w:** mostra quem está logado.
+- **last:** histórico de quem fez login no sistema
 
 ## Text Processing:
 
