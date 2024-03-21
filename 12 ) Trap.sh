@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#
 # Trap para SIGHUP
 trap 'echo "Recebido o sinal SIGHUP"' SIGHUP
 
