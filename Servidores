@@ -1,0 +1,49 @@
+Sobre servidores, temos alguns conceitos importantes:
+
+Geralmente acessamos um site para buscar algo ou baixar. Somos clientes e os sites se comportam como um computador remoto (servidores). A informação, que é buscada nos servidores, é vinda por meio do
+HTTP. O computador servidor precisa separar as informações que serão passadas para nós, clientes. Sendo assim, o HTTP envia as páginas web e temos alguns servidores conhecidos: Apache, Nginx e lighttpd.
+
+Apache HTTP Server: O Apache é um dos servidores web mais antigos e amplamente utilizados. 
+Ele foi lançado pela primeira vez em 1995 e é conhecido por sua estabilidade, flexibilidade e suporte a uma ampla variedade de módulos e extensões.
+O Apache é de código aberto e mantido pela Apache Software Foundation. Ele é amplamente utilizado em diversos sistemas operacionais, incluindo Linux, Unix, Windows e outros.
+
+Nginx: O Nginx (pronunciado como "engine-x") é um servidor web de alto desempenho, leve e escalável.
+Ele foi lançado em 2004 e, desde então, ganhou popularidade devido à sua capacidade de lidar com grandes volumes de tráfego de forma eficiente e escalável. 
+O Nginx é frequentemente usado como um servidor proxy reverso, balanceador de carga ou servidor de conteúdo estático, embora também possa servir conteúdo dinâmico. 
+Assim como o Apache, o Nginx é de código aberto e é amplamente suportado em várias plataformas.
+
+lighttpd: O lighttpd (também conhecido como "lighty") é um servidor web rápido, eficiente e de baixa sobrecarga.
+Ele foi projetado para ser leve em recursos e é frequentemente usado em ambientes onde o desempenho e a eficiência são prioritários. 
+O lighttpd é especialmente adequado para servir conteúdo estático e é conhecido por seu baixo consumo de recursos de hardware, tornando-o uma escolha popular para servidores web de alta carga.
+Assim como o Apache e o Nginx, o lighttpd é de código aberto e é amplamente suportado em várias plataformas.
+
+Mesmo as páginas web mais simples podem ter muitas solicitações, que vão desde arquivos
+comuns — o que se chama conteúdo estático — até o conteúdo dinâmico renderizado a partir de
+diversas fontes. O papel de um servidor HTTP é coletar e enviar todos os dados solicitados de volta
+para o navegador, que então organiza o conteúdo conforme definido pelo documento HTML
+recebido (HTML significa Hyper Text Markup Language, ou Linguagem de Marcação de
+Hipertexto) e outros arquivos anexos. Portanto, a renderização de uma página web envolve
+operações executadas no lado do servidor e operações executadas no lado do cliente. Ambos os
+lados podem usar scripts personalizados para realizar tarefas específicas. No lado do servidor
+HTTP, a linguagem de scripts PHP é comumente usada. Já no lado do cliente usa-se o JavaScript
+
+Sobre nginx:
+
+Servidor de conteúdo estático: Uma das principais características do Nginx é sua capacidade de servir conteúdo estático de forma eficiente. 
+Isso significa que ele pode entregar arquivos HTML, CSS, JavaScript, imagens e outros tipos de arquivos estáticos para os clientes de forma rápida e eficiente.
+O Nginx é otimizado para lidar com um grande número de solicitações para esse tipo de conteúdo,
+tornando-o uma escolha popular para servir sites estáticos, como páginas da web simples ou aplicativos da web com pouca ou nenhuma interatividade dinâmica.
+
+Proxy reverso: O Nginx também é amplamente utilizado como servidor proxy reverso. Um servidor proxy reverso atua como intermediário entre os clientes e os servidores de destino.
+Quando um cliente faz uma solicitação, ela é encaminhada para o servidor proxy reverso, que então encaminha a solicitação para o servidor de destino. Isso é útil em muitos cenários, como:
+
+Balanceamento de carga: O Nginx pode distribuir o tráfego entre vários servidores de destino para distribuir a carga de trabalho de forma equilibrada e garantir alta disponibilidade e desempenho.
+
+Cache de conteúdo: O Nginx pode armazenar em cache conteúdo estático ou dinâmico para reduzir a carga nos servidores de destino e melhorar o tempo de resposta para os clientes. 
+Isso é especialmente útil para sites com grande volume de tráfego ou conteúdo que muda com pouca frequência.
+
+Segurança e filtragem: O Nginx pode ser usado para filtrar solicitações maliciosas, proteger contra ataques DDoS (Distributed Denial of Service) e implementar políticas de segurança, como controle de acesso e autenticação.
+
+Balanceador de carga: Além de atuar como um servidor proxy reverso, o Nginx pode ser configurado como um balanceador de carga para distribuir o tráfego entre vários servidores de destino. 
+Ele pode distribuir as solicitações de entrada de forma equilibrada usando algoritmos de balanceamento de carga como round-robin, least connections, IP hashing, entre outros. 
+Isso ajuda a melhorar a escalabilidade, a disponibilidade e o desempenho do aplicativo, distribuindo a carga de trabalho de forma eficiente entre os servidores disponíveis.
