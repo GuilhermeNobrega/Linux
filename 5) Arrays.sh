@@ -49,3 +49,16 @@ my_array[2]=99
 fruits=('Apple' 'Banana' 'Cherry')
 fruits+=('Date')
 echo ${fruits[*]
+
+#=====================================
+
+#!/bin/bash
+
+vetor=(1 2 3 4 5)
+valor=4
+
+if [[ "${vetor[*]}" =~ $valor ]];
+then
+    echo "Valor $valor está no vetor"
+else
+    echo "Valor $valor n está no vetor"
