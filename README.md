@@ -39,6 +39,7 @@ Aprender sobre Linux é uma jornada fascinante, e também o mundo incrível do S
 - **pwd:** "print working directory", mostra o diretório em que você está atualmente.
 - **rm:** "remove", usado para remover arquivos e diretórios.
 - **wc:** "word count", usado para contar caracteres, palavras e linhas em arquivos de texto e/ou entrada padrão.
+- **type:** "type", usado para descobrir o tipo de comando do shell, sendo interno ou externo a este.
 
 ## Searching:
 
