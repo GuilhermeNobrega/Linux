@@ -52,6 +52,8 @@ Aprender sobre Linux é uma jornada fascinante, e também o mundo incrível do S
 # sdiff
 Compara dois arquivos lado a lado de forma mais organizada e visual (deixe o terminal em tela cheia).
 
+# which
+Para achar arquivos e tipos (which $SHELL)
 # find
 Um comando poderoso usado para encontrar arquivos e diretórios com uma variedade de critérios de pesquisa.
 
